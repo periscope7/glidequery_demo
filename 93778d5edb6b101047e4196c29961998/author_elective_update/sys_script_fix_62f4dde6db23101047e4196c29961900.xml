@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="DELETE">
+        <active>true</active>
+        <before>false</before>
+        <description/>
+        <flush_cache>false</flush_cache>
+        <name>ps7 - Simple Query Example</name>
+        <record_for_rollback>false</record_for_rollback>
+        <run_once>true</run_once>
+        <script><![CDATA[/*This example uses the GlideQuery API to retrive a list of Incidents and write the retrieved numbers to the Application Log. */
+
+new global.GlideQuery('incident')
+    .where('category', 'hardware')
+    .select('number', 'caller_id.name')
+    .forEach(function (inc) {
+        gs.info(inc.number + ' for ' + inc.caller_id.name);
+    });]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>thilo.grobe@periscope7.com</sys_created_by>
+        <sys_created_on>2020-10-02 07:25:27</sys_created_on>
+        <sys_id>62f4dde6db23101047e4196c29961900</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>ps7 - Simple Query Example</sys_name>
+        <sys_package display_value="periscope7 GlideQuery Demo" source="x_0555_ps7_gqd">93778d5edb6b101047e4196c29961998</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="periscope7 GlideQuery Demo">93778d5edb6b101047e4196c29961998</sys_scope>
+        <sys_update_name>sys_script_fix_62f4dde6db23101047e4196c29961900</sys_update_name>
+        <sys_updated_by>thilo.grobe@periscope7.com</sys_updated_by>
+        <sys_updated_on>2020-10-02 08:00:03</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="periscope7 GlideQuery Demo">93778d5edb6b101047e4196c29961998</application>
+        <file_path/>
+        <instance_id>ad29fc0edbf0f30452cec59705961943</instance_id>
+        <instance_name>dev81071</instance_name>
+        <name>sys_script_fix_62f4dde6db23101047e4196c29961900</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_fix"&gt;&lt;sys_script_fix action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;before&gt;false&lt;/before&gt;&lt;description/&gt;&lt;flush_cache&gt;false&lt;/flush_cache&gt;&lt;name&gt;ps7 - Simple Query Example&lt;/name&gt;&lt;record_for_rollback&gt;false&lt;/record_for_rollback&gt;&lt;run_once&gt;true&lt;/run_once&gt;&lt;script&gt;&lt;![CDATA[/*This example uses the GlideQuery API to retrive a list of Incidents and write the retrieved numbers to the Application Log. */
+
+new global.GlideQuery('incident')
+    .where('category', 'hardware')
+    .select('number', 'caller_id.name')
+    .forEach(function (inc) {
+        gs.info(inc.number + ' for ' + inc.caller_id.name);
+    });]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_fix&lt;/sys_class_name&gt;&lt;sys_created_by&gt;thilo.grobe@periscope7.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-10-02 07:25:27&lt;/sys_created_on&gt;&lt;sys_id&gt;62f4dde6db23101047e4196c29961900&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;ps7 - Simple Query Example&lt;/sys_name&gt;&lt;sys_package display_value="periscope7 GlideQuery Demo" source="x_0555_ps7_gqd"&gt;93778d5edb6b101047e4196c29961998&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="periscope7 GlideQuery Demo"&gt;93778d5edb6b101047e4196c29961998&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_fix_62f4dde6db23101047e4196c29961900&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;thilo.grobe@periscope7.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-10-02 08:00:03&lt;/sys_updated_on&gt;&lt;unloadable&gt;false&lt;/unloadable&gt;&lt;/sys_script_fix&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-997329548</payload_hash>
+        <record_name>ps7 - Simple Query Example</record_name>
+        <reverted_from/>
+        <source>65e9c1d2dbab101047e4196c299619c0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>thilo.grobe@periscope7.com</sys_created_by>
+        <sys_created_on>2020-10-02 08:00:03</sys_created_on>
+        <sys_id>15ec9d62dbe3101047e4196c29961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>174e8533c330000001</sys_recorded_at>
+        <sys_updated_by>thilo.grobe@periscope7.com</sys_updated_by>
+        <sys_updated_on>2020-10-02 08:00:03</sys_updated_on>
+        <type>Fix Script</type>
+        <update_guid>9dec9d62c4e3101011ea9e5dae41aa87</update_guid>
+        <update_guid_history>9dec9d62c4e3101011ea9e5dae41aa87:-997329548,5ebc196228e310106fa85fd1bcd33e5b:-662700866,5ad9dd22dfa31010be10c6c9e3757ba8:-357483167,30a9152a13a3101013af8d3498d6f417:-1720767795,f628dd2214a31010fc211cf00d2d6f31:-1553024220,e5089dee9e631010e80d38b4cd0973ec:1341754008,a657556aaf6310102d3e536e9e4ce43d:-1927472530,d427d1e6bc631010e8667b945f158b38:-133256520,e6f4dde6a3231010703d6e82beffaa06:-1049088462</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>thilo.grobe@periscope7.com</sys_created_by>
+        <sys_created_on>2020-10-02 08:04:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_fix">sys_script_fix</sys_db_object>
+        <sys_id>0f0b4c143bb44f70ad620fc2ab900900</sys_id>
+        <sys_metadata>62f4dde6db23101047e4196c29961900</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ps7 - Simple Query Example</sys_name>
+        <sys_package display_value="periscope7 GlideQuery Demo" source="x_0555_ps7_gqd">93778d5edb6b101047e4196c29961998</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="periscope7 GlideQuery Demo">93778d5edb6b101047e4196c29961998</sys_scope>
+        <sys_scope_delete display_value="">2acbbc090e8048a1892e9dd830146cb1</sys_scope_delete>
+        <sys_update_name>sys_script_fix_62f4dde6db23101047e4196c29961900</sys_update_name>
+        <sys_update_version display_value="sys_script_fix_62f4dde6db23101047e4196c29961900">15ec9d62dbe3101047e4196c29961988</sys_update_version>
+        <sys_updated_by>thilo.grobe@periscope7.com</sys_updated_by>
+        <sys_updated_on>2020-10-02 08:04:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

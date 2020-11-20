@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sys_script_fix" version="2" view="periscope7">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="sys_script_fix" element="NULL" name="sys_script_fix" parent="NULL" relationship="NULL" sys_domain="global" view="37aba51adbaf101047e4196c29961912">5bbbe51adbaf101047e4196c2996192e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>thilo.grobe@periscope7.com</sys_created_by>
+            <sys_created_on>2020-10-01 14:26:25</sys_created_on>
+            <sys_id>17bbe51adbaf101047e4196c2996192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>thilo.grobe@periscope7.com</sys_updated_by>
+            <sys_updated_on>2020-10-01 14:26:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>description</element>
+            <list_id display_value="sys_script_fix" element="NULL" name="sys_script_fix" parent="NULL" relationship="NULL" sys_domain="global" view="37aba51adbaf101047e4196c29961912">5bbbe51adbaf101047e4196c2996192e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>thilo.grobe@periscope7.com</sys_created_by>
+            <sys_created_on>2020-10-01 14:26:25</sys_created_on>
+            <sys_id>97bbe51adbaf101047e4196c2996192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>thilo.grobe@periscope7.com</sys_updated_by>
+            <sys_updated_on>2020-10-01 14:26:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_script_fix</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>thilo.grobe@periscope7.com</sys_created_by>
+            <sys_created_on>2020-10-01 14:26:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5bbbe51adbaf101047e4196c2996192e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_script_fix</sys_name>
+            <sys_package display_value="periscope7 GlideQuery Demo" source="x_0555_ps7_gqd">93778d5edb6b101047e4196c29961998</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="periscope7 GlideQuery Demo">93778d5edb6b101047e4196c29961998</sys_scope>
+            <sys_update_name>sys_ui_list_sys_script_fix_periscope7</sys_update_name>
+            <sys_updated_by>thilo.grobe@periscope7.com</sys_updated_by>
+            <sys_updated_on>2020-10-01 14:26:25</sys_updated_on>
+            <sys_user/>
+            <view display_value="periscope7" name="periscope7">37aba51adbaf101047e4196c29961912</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

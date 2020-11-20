@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Custom Task" max_length="40" name="x_0555_ps7_gqd_custom_task" sizeclass="0" type="collection"/>
+</database>

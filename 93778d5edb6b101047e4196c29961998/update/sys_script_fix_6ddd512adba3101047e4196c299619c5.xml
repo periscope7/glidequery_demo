@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description>This example uses the GlideQuery API to retrive a list of Incidents and iterate through the retrieved objects. &#13;
+&#13;
+</description>
+        <flush_cache>false</flush_cache>
+        <name>ps7 - Simple Query Examples</name>
+        <record_for_rollback>false</record_for_rollback>
+        <run_once>true</run_once>
+        <script><![CDATA[/* This example uses the GlideQuery API to retrive a list of Incidents and iterate through the retrieved objects. */
+
+var output = '*** GlideQuery Simple Query Example ***\n';
+
+new global.GlideQuery('incident')
+    .where('category', 'hardware')
+    .select('number', 'caller_id.name')
+    .forEach(function (inc) {
+        output += (inc.number + ' for ' + inc.caller_id.name + '\n');
+    });
+
+gs.info(output);
+
+/* Below is the GlideRecord code as a reference*/
+
+output = '*** GlideRecord Simple Query Example ***\n';
+
+var inc = new GlideRecord('incident');
+inc.addQuery('category', 'hardware');
+inc.query();
+while (inc.next()) {
+    output += (inc.number + ' for ' + inc.caller_id.name + '\n');
+}
+
+gs.info(output);]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>thilo.grobe@periscope7.com</sys_created_by>
+        <sys_created_on>2020-10-02 08:04:09</sys_created_on>
+        <sys_id>6ddd512adba3101047e4196c299619c5</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>ps7 - Simple Query Examples</sys_name>
+        <sys_package display_value="periscope7 GlideQuery Demo" source="x_0555_ps7_gqd">93778d5edb6b101047e4196c29961998</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="periscope7 GlideQuery Demo">93778d5edb6b101047e4196c29961998</sys_scope>
+        <sys_update_name>sys_script_fix_6ddd512adba3101047e4196c299619c5</sys_update_name>
+        <sys_updated_by>thilo.grobe@periscope7.com</sys_updated_by>
+        <sys_updated_on>2020-10-02 08:48:05</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>
