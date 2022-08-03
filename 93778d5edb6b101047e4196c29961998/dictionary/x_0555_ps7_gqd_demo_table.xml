@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="GQ Demo Table" max_length="40" name="x_0555_ps7_gqd_demo_table" type="collection">
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element choice="3" default="1" label="Priority" max_length="40" name="priority" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1 - important" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2 - probably important" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3 - who cares?" sequence="3" value="3"/>
+            </choice>
+        </element>
+        <element label="Text" max_length="20" name="text" type="string"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

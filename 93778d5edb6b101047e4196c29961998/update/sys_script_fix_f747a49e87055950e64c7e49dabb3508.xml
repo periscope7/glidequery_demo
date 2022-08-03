@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
     <sys_script_fix action="INSERT_OR_UPDATE">
         <before>false</before>
-        <description>This example uses the GlideQuery API to retrive a list of Incidents and iterate through the retrieved objects. &#13;
-&#13;
+        <description>This example uses the GlideQuery API to insert a new Incident intpo the database&#13;
 </description>
-        <name>ps7 - Simple Query Examples</name>
+        <name>ps7 - Simple Insert Examples</name>
         <record_for_rollback>false</record_for_rollback>
         <script><![CDATA[/* This example uses the GlideQuery API to retrive a list of P2 Incidents and iterate through the retrieved objects. */
 
-var output = '*** GlideQuery Simple Query Example ***\n';
+var output = '*** - GlideQuery - ***\n*** Simple INSERT Example ***\n';
 
 new global.GlideQuery('incident')
     .where('priority', 2)
     .select('number', 'caller_id.name')
     .forEach(function (inc) {
-        output += (inc.number + ' for ' + inc.caller_id.last_name + '\n');
+        output += (inc.number + ' for ' + inc.caller_id.name + '\n');
     });
 
 gs.info(output);
 
 /* Below is the GlideRecord code as a reference*/
 
-output = '*** GlideRecord Simple Query Example ***\n';
+output = '*** - GlideRecord - ***\n*** Simple INSERT Example ***\n';
 
 var inc = new GlideRecord('incident');
 inc.addQuery('priority', '2');
@@ -33,16 +32,16 @@ while (inc.next()) {
 gs.info(output);]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>thilo.grobe@periscope7.com</sys_created_by>
-        <sys_created_on>2020-10-02 08:04:09</sys_created_on>
-        <sys_id>6ddd512adba3101047e4196c299619c5</sys_id>
-        <sys_mod_count>15</sys_mod_count>
-        <sys_name>ps7 - Simple Query Examples</sys_name>
+        <sys_created_on>2022-08-03 11:35:05</sys_created_on>
+        <sys_id>f747a49e87055950e64c7e49dabb3508</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ps7 - Simple Insert Examples</sys_name>
         <sys_package display_value="periscope7 GlideQuery Demo" source="x_0555_ps7_gqd">93778d5edb6b101047e4196c29961998</sys_package>
         <sys_policy/>
         <sys_scope display_value="periscope7 GlideQuery Demo">93778d5edb6b101047e4196c29961998</sys_scope>
-        <sys_update_name>sys_script_fix_6ddd512adba3101047e4196c299619c5</sys_update_name>
+        <sys_update_name>sys_script_fix_f747a49e87055950e64c7e49dabb3508</sys_update_name>
         <sys_updated_by>thilo.grobe@periscope7.com</sys_updated_by>
-        <sys_updated_on>2022-08-03 11:34:03</sys_updated_on>
+        <sys_updated_on>2022-08-03 11:36:40</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>

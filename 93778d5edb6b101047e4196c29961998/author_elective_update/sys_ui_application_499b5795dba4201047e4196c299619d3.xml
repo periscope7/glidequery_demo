@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="DELETE">
+        <active>true</active>
+        <hint/>
+        <name>Custom Task</name>
+        <order/>
+        <roles>x_0555_ps7_gqd.user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>thilo.grobe@periscope7.com</sys_created_by>
+        <sys_created_on>2020-11-17 13:03:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>499b5795dba4201047e4196c299619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Custom Task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="periscope7 GlideQuery Demo" source="x_0555_ps7_gqd">93778d5edb6b101047e4196c29961998</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="periscope7 GlideQuery Demo">93778d5edb6b101047e4196c29961998</sys_scope>
+        <sys_update_name>sys_ui_application_499b5795dba4201047e4196c299619d3</sys_update_name>
+        <sys_updated_by>thilo.grobe@periscope7.com</sys_updated_by>
+        <sys_updated_on>2020-11-17 13:03:55</sys_updated_on>
+    </sys_ui_application>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="periscope7 GlideQuery Demo">93778d5edb6b101047e4196c29961998</application>
+        <file_path/>
+        <instance_id>22c7fac4db0da81007072f17d49619b4</instance_id>
+        <instance_name>periscope7gmbhdemo2</instance_name>
+        <name>sys_ui_application_499b5795dba4201047e4196c299619d3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <hint/>
+        <name>Custom Task</name>
+        <order/>
+        <roles>x_0555_ps7_gqd.user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>thilo.grobe@periscope7.com</sys_created_by>
+        <sys_created_on>2020-11-17 13:03:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>499b5795dba4201047e4196c299619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Custom Task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="periscope7 GlideQuery Demo" source="x_0555_ps7_gqd">93778d5edb6b101047e4196c29961998</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="periscope7 GlideQuery Demo">93778d5edb6b101047e4196c29961998</sys_scope>
+        <sys_update_name>sys_ui_application_499b5795dba4201047e4196c299619d3</sys_update_name>
+        <sys_updated_by>thilo.grobe@periscope7.com</sys_updated_by>
+        <sys_updated_on>2020-11-17 13:03:55</sys_updated_on>
+    </sys_ui_application>
+</record_update>]]></payload>
+        <payload_hash>708192131</payload_hash>
+        <record_name>Custom Task</record_name>
+        <reverted_from/>
+        <source>069d3bc287c15950e64c7e49dabb3586</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>thilo.grobe@periscope7.com</sys_created_by>
+        <sys_created_on>2022-08-03 08:33:06</sys_created_on>
+        <sys_id>79adfbc287c15950e64c7e49dabb3524</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18262d645ce0000001</sys_recorded_at>
+        <sys_updated_by>thilo.grobe@periscope7.com</sys_updated_by>
+        <sys_updated_on>2022-08-03 08:33:06</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>39adfbc2f3c159503c195e78e1003224</update_guid>
+        <update_guid_history>39adfbc2f3c159503c195e78e1003224:708192131</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>thilo.grobe@periscope7.com</sys_created_by>
+        <sys_created_on>2022-08-03 11:46:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_application">sys_ui_application</sys_db_object>
+        <sys_id>1a0c5a268a204450afb3d36b13fab7f9</sys_id>
+        <sys_metadata>499b5795dba4201047e4196c299619d3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Custom Task</sys_name>
+        <sys_package display_value="periscope7 GlideQuery Demo" source="x_0555_ps7_gqd">93778d5edb6b101047e4196c29961998</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="periscope7 GlideQuery Demo">93778d5edb6b101047e4196c29961998</sys_scope>
+        <sys_scope_delete display_value="">2acbbc090e8048a1892e9dd830146cb1</sys_scope_delete>
+        <sys_update_name>sys_ui_application_499b5795dba4201047e4196c299619d3</sys_update_name>
+        <sys_update_version display_value="sys_ui_application_499b5795dba4201047e4196c299619d3">79adfbc287c15950e64c7e49dabb3524</sys_update_version>
+        <sys_updated_by>thilo.grobe@periscope7.com</sys_updated_by>
+        <sys_updated_on>2022-08-03 11:46:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
